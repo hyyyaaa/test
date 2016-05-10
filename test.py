@@ -1,1 +1,1 @@
-print "success new 2"
+print "success new 2asda"
