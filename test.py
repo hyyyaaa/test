@@ -17,9 +17,11 @@ class SimpleTest(unittest.TestCase):
     def test_fail(self):
         self.assertEqual(11, 7 + 3)
 
-if __name__ == '__main__':
+ #if __name__ == '__main__':
     
-    suite = unittest.TestLoader().loadTestsFromTestCase(SimpleTest)
-    unittest.TextTestRunner(verbosity=2).run(suite)
-
+  #  suite = unittest.TestLoader().loadTestsFromTestCase(SimpleTest)
+   # unittest.TextTestRunner(verbosity=2).run(suite)
+if __name__ == '__main__':
+    import xmlrunner
+    unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
     
